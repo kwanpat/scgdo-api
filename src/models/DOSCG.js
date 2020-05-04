@@ -2,7 +2,6 @@ const { Client } = require("@googlemaps/google-maps-services-js");
 const { getOr } = require("lodash/fp");
 const env = require("../config/env");
 const constants = require("../config/constants");
-const { logger } = require("../utils/logger");
 
 /**
  * Return possible route by origin and destination

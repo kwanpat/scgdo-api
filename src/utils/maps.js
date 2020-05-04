@@ -31,5 +31,5 @@ const getBestestRoute = (routes) => {
 };
 
 module.exports = {
-    getBestestRoute
-}
+  getBestestRoute
+};
