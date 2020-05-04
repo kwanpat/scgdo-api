@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js",
+    "start": "nodemon ./src/server.js",
     "lint": "eslint ."
   },
   "repository": {
@@ -21,10 +21,12 @@
   },
   "homepage": "https://github.com/kwanpat/scgdo-api#readme",
   "dependencies": {
+    "@googlemaps/google-maps-services-js": "^2.6.0",
     "envalid": "^6.0.1",
     "express": "^4.17.1",
     "express-winston": "^4.0.3",
     "http": "0.0.1-security",
+    "lodash": "^4.17.15",
     "luxon": "^1.23.0",
     "winston": "^3.2.1"
   },
@@ -38,8 +40,8 @@
   },
   "nodemonConfig": {
     "watch": [
-      "./config",
-      "./src"
+      "./src",
+      "./package.json"
     ]
   }
 }

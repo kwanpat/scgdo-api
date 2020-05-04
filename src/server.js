@@ -12,7 +12,7 @@ const httpServer = http.createServer(app);
 app.use("/", routes);
 
 httpServer.listen(env.PORT, () => {
-    logger.info(`Server running on ${ httpServer.address().port }`);
+  logger.info(`Server running on ${ httpServer.address().port }`);
 });
 
 module.exports = app;

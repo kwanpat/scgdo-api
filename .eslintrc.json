@@ -162,7 +162,7 @@
         }],
         "function-paren-newline": ["error", "consistent"],
         "implicit-arrow-linebreak": "error",
-        "indent": ["error", 4],
+        "indent": ["error", 2],
         "key-spacing": "error",
         "keyword-spacing": "error",
         "line-comment-position": "error",

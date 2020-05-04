@@ -7,26 +7,26 @@ const { format } = winston;
 const { combine, timestamp, json } = format;
 
 const winstonDefaultOption = {
-    level: env.LOG_LEVEL,
-    format: combine(timestamp(), json()),
-    transports: [
-        new winston.transports.Console({
-            timestamp: DateTime.utc().toString()
-        })
-    ]
+  level: env.LOG_LEVEL,
+  format: combine(timestamp(), json()),
+  transports: [
+    new winston.transports.Console({
+      timestamp: DateTime.utc().toString()
+    })
+  ]
 };
 
 const logger = winston.createLogger({
-    ...winstonDefaultOption
+  ...winstonDefaultOption
 });
 
 const loggerExpress = expressWinston.logger({
-    expressFormat: true,
-    meta: true,
-    ...winstonDefaultOption
+  expressFormat: true,
+  meta: true,
+  ...winstonDefaultOption
 });
 
 module.exports = {
-    logger,
-    loggerExpress
+  logger,
+  loggerExpress
 };
