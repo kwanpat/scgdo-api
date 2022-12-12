@@ -24,7 +24,7 @@
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^2.6.0",
     "envalid": "^6.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-winston": "^4.0.3",
     "http": "0.0.1-security",
     "lodash": "^4.17.15",
