@@ -28,7 +28,7 @@
     "express-winston": "^4.0.3",
     "http": "0.0.1-security",
     "lodash": "^4.17.15",
-    "luxon": "^1.23.0",
+    "luxon": "^2.5.2",
     "winston": "^3.2.1"
   },
   "devDependencies": {
